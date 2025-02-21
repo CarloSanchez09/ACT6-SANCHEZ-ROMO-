@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanchez Romo - Actividad 6</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Vincula el archivo de estilos -->
+</head>
+<body>
+    <div class="container">
+        <h1>Actividad 6 - Práctica con APIs</h1>
+
+        <!-- 1. Lista de Usuarios -->
+        <section id="ejercicio1" class="section">
+            <h2>1. Lista de Usuarios</h2>
+            <input type="text" id="searchUser" class="search-input" placeholder="Buscar usuario">
+            <table>
+                <thead>
+                    <tr><th>Foto</th><th>Nombre</th><th>Correo</th></tr>
+                </thead>
+                <tbody id="userList"></tbody>
+            </table>
+        </section>
+
+        <!-- 2. Noticias de Tecnología (Simulada) -->
+        <section id="ejercicio2" class="section">
+            <h2>2. Noticias de Tecnología (Simuladas)</h2>
+            <input type="text" id="searchNews" class="search-input" placeholder="Buscar noticia">
+            <button id="getNews" class="btn btn-primary">Buscar Noticias</button>
+            <div id="newsList"></div>
+        </section>
+
+        <!-- 3. Clima en Tiempo Real (Simulado) -->
+        <section id="ejercicio3" class="section">
+            <h2>3. Clima en Tiempo Real (Simulado)</h2>
+            <input type="text" id="cityInput" class="search-input" placeholder="Ingresa una ciudad">
+            <button id="getWeather" class="btn btn-secondary">Consultar Clima</button>
+            <div id="weatherResult"></div>
+        </section>
+
+        <!-- 4. Conversor de Monedas (Simulado) -->
+        <section id="ejercicio4" class="section">
+            <h2>4. Conversor de Monedas (Simulado)</h2>
+            <input type="number" id="amount" class="search-input" placeholder="Cantidad">
+            <input type="text" id="fromCurrency" class="search-input" placeholder="De (USD)">
+            <input type="text" id="toCurrency" class="search-input" placeholder="A (EUR)">
+            <button id="convertCurrency" class="btn btn-success">Convertir</button>
+            <div id="currencyResult"></div>
+        </section>
+
+        <!-- 5. Galería de Imágenes (Simulada) -->
+        <section id="ejercicio5" class="section">
+            <h2>5. Galería de Imágenes (Simuladas)</h2>
+            <input type="text" id="searchImage" class="search-input" placeholder="Buscar imágenes">
+            <button id="getImages" class="btn btn-warning">Buscar</button>
+            <div id="imageGallery"></div>
+        </section>
+
+        <!-- 6. Pokédex -->
+        <section id="ejercicio6" class="section">
+            <h2>6. Pokédex</h2>
+            <input type="text" id="searchPokemon" class="search-input" placeholder="Nombre o Número">
+            <button id="getPokemon" class="btn btn-danger">Buscar</button>
+            <div id="pokemonResult"></div>
+        </section>
+
+        <!-- 7. Lista de Películas (Simuladas) -->
+        <section id="ejercicio7" class="section">
+            <h2>7. Lista de Películas (Simuladas)</h2>
+            <input type="text" id="searchMovie" class="search-input" placeholder="Buscar película">
+            <button id="getMovies" class="btn btn-outline">Buscar</button>
+            <div id="movieList"></div>
+        </section>
+
+        <!-- 8. Seguimiento de Criptomonedas -->
+        <section id="ejercicio8" class="section">
+            <h2>8. Seguimiento de Criptomonedas</h2>
+            <button id="getCrypto" class="btn btn-primary">Actualizar Precios</button>
+            <div id="cryptoPrices"></div>
+        </section>
+
+        <!-- 9. Agenda de Tareas -->
+        <section id="ejercicio9" class="section">
+            <h2>9. Agenda de Tareas</h2>
+            <input type="text" id="newTask" class="search-input" placeholder="Nueva tarea">
+            <button id="addTask" class="btn btn-success">Agregar</button>
+            <ul id="taskList"></ul>
+        </section>
+
+        <!-- 10. Datos de Países -->
+        <section id="ejercicio10" class="section">
+            <h2>10. Datos de Países</h2>
+            <input type="text" id="searchCountry" class="search-input" placeholder="Nombre del país">
+            <button id="getCountry" class="btn btn-secondary">Buscar</button>
+            <div id="countryResult"></div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
